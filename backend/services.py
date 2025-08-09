@@ -1,7 +1,7 @@
 # backend/services.py
 
 import time
-from .schemas import ChatRequest # schemas.py의 ChatRequest 모델 임포트
+from schemas import ChatRequest
 
 async def get_llm_response(request: ChatRequest) -> str:
     """
