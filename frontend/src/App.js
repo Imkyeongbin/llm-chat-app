@@ -28,7 +28,7 @@ function App() {
 
     try {
       // 백엔드 API(FastAPI)에 요청
-      const response = await axios.post('http://localhost:8000/api/chat', {
+      const response = await axios.post('http://localhost:8000/api/agent/chat', { // 👈 여기만 변경!
         message: input,
       });
 
